@@ -1,6 +1,6 @@
 package uno;
 
-import uno.Game.PlayStatus;
+import uno.GameTime.PlayStatus;
 
 /**
  * Exception thrown when a player plays an illegal card.
