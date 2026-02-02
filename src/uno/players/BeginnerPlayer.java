@@ -11,6 +11,7 @@ Java Version: Java 24
 // This import allows us to use all the Uno classes provided for the project
 // Examples: Card, Player, WildCard, ColoredCard, etc.
 import uno.*;
+import uno.Game;
 // This import allows use to use the List type, which stores the cards in our hand
 import java.util.List;
 
@@ -112,5 +113,26 @@ public class BeginnerPlayer implements Player{
     @Override
     public void deckShuffles() {
 
+    }
+
+    public static void main(String[] args){
+        //Creates two players to play against each other
+        Player player1 = new BeginnerPlayer();
+        Player player2 = new BeginnerPlayer();
+
+        Player[] players = new Player[]{
+                player1, player2
+        };
+
+        //Enables output to the console
+        uno.Game = new Game(players, true);
+
+        try {
+            int winner = game.play();
+            System.out.println("The winner is: " + winner);
+
+        } catch (IllegalCardException e) {
+            System.out.println("Illegal move!");
+        }
     }
 }
