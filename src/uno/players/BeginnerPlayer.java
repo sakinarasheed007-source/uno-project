@@ -2,7 +2,7 @@ package uno.players;
 /*
 Title       : BeginnerPlayer.java
 Description : A very simple Uno player that always playe the first legal card.
-Author      : Sakina Hussain
+Author      : Sakina Hussain, Bethany Mixon
 Date        : 01/29/2026
 Version     : 1.0
 Java Version: Java 24
