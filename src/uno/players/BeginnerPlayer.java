@@ -2,7 +2,7 @@ package uno.players;
 /*
 Title       : BeginnerPlayer.java
 Description : A very simple Uno player that always playe the first legal card.
-Author      : Sakina Hussain && Bethany Mixon
+Author      : Sakina Hussain, Bethany Mixon
 Date        : 01/29/2026
 Version     : 1.0
 Java Version: Java 24
@@ -128,8 +128,8 @@ public class BeginnerPlayer implements Player{
         uno.Game = new Game(players, true);
 
         try {
-            int winnerIndex = game.play();
-            System.out.println("The winner is: " + winnerIndex);
+            int winner = game.play();
+            System.out.println("The winner is: " + winner);
 
         } catch (IllegalCardException e) {
             System.out.println("Illegal move!");
