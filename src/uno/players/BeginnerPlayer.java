@@ -66,7 +66,7 @@ public class BeginnerPlayer implements Player{
         return -1;
     }
     /*
-    *This method is REQUIRED by the Player interface.
+    *This method is REQUIRED by the Player interface.b
     * It is called after we play a Wild or Wild Draw Four card
     *
     * For simplicity, we always choose RED.
@@ -128,7 +128,7 @@ public class BeginnerPlayer implements Player{
         uno.Game = new Game(players, true);
 
         try {
-            int winner = game.play();
+            int winner = Game.playerPlays();
             System.out.println("The winner is: " + winner);
 
         } catch (IllegalCardException e) {
